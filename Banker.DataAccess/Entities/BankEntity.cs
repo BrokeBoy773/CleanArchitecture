@@ -1,0 +1,8 @@
+﻿namespace Banker.DataAccess.Entities
+{
+    public class BankEntity
+    {
+        public Guid Id { get; set; }
+        public string Name { get; set; } = string.Empty;
+    }
+}
