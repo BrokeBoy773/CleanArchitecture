@@ -31,11 +31,6 @@ namespace Banker.API.Controllers
         {
             Bank bank = Bank.Create(Guid.NewGuid(), request.Name);
 
-            //if (!string.IsNullOrEmpty())
-            //{
-            //    throw new NotImplementedException();
-            //}
-
             Guid bankId = await _banksService.CreateBank(bank);
 
             return Ok(bankId);

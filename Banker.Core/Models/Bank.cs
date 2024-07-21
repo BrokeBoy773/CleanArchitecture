@@ -15,11 +15,6 @@
 
         public static Bank Create(Guid id, string name)
         {
-            if (string.IsNullOrEmpty(name) || name.Length > MAX_NAME_LENGTH)
-            {
-                throw new NotImplementedException();
-            }
-
             Bank bank = new Bank(id, name);
             return bank;
         }
